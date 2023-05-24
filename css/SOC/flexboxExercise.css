@@ -1,0 +1,62 @@
+.first-flexbox{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+.div1{
+    background-color: lightblue;
+    width: 200px;
+}
+
+.div2{
+    background-color: lightpink;
+    width: 75px;
+}
+
+.second-flexbox{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+.item1{
+    background-color: lightblue;
+    width: 50px;
+}
+
+.item2{
+    background-color: lightpink;
+    flex:1;
+}
+
+.item3{
+    background-color: lightblue;
+    width: 75px;
+}
+
+.third-flexbox{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+.third-item{
+    background-color: lightpink;
+    width: 30px;    /*because of less width and big font size containt is overflowing */
+}
+
+.fourth-flexbox{
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    border: 1px solid black;
+    justify-content:space-between ;
+    align-items: center;
+}
+
+.fourth-item{
+    background-color: lightblue;
+}

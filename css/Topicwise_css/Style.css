@@ -1,0 +1,20 @@
+nav{
+    background-color: black;
+    padding: 15px;
+    display: flex; /* set the container as flex to enable flexbox properties */
+    justify-content: center; /* horizontally center */
+    align-items: center; /*vertically center if needed */
+}
+
+nav a{
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-align:center;
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+nav a:hover{
+    color: rgba(165, 42, 42, 0.591);
+}

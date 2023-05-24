@@ -1,0 +1,29 @@
+body{
+    height: 3000px;
+}
+
+.bottom-right{
+    position: fixed;
+    bottom: 20px;
+    left:20px;
+    background-color: black;
+    color: white;
+}
+
+.sidebar{
+    position: fixed;
+    background-color: green;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+}
+
+.entirePage{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(173, 216, 230, 0.409);
+}

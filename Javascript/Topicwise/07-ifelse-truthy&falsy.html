@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ifelse-truthy and falsy</title>
+</head>
+<body>
+   <script>
+    let cartQuantity = 3;
+
+    if(5){
+        console.log('truthy');        //this statement will run because of truthy value
+    }
+    if(0){
+        console.log('falsy');         //this statement wont run because of falsy value
+    }
+    if(cartQuantity){
+        console.log('cart has products');     //if cartQuantity is zero then this wont gonna run
+    }
+
+
+    //falsy values are (false, 0, '', NaN, undefined, null)
+    //Nan is not a number
+    //undefined is something which doesn't have value
+    
+
+   </script>
+</body>
+</html>

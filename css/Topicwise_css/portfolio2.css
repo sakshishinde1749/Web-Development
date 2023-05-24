@@ -1,0 +1,17 @@
+img[src="../../Static/logo.png"]{
+    width: 69px;
+    padding: 10px;
+    margin: 2px;
+}
+li{
+    list-style-type: none;
+    float: left;
+}
+a{
+    text-decoration: none;
+    margin-left: 190px;
+    margin-right:12px;
+    text-align: right;
+    display: flex;
+
+}

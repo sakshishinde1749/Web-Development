@@ -1,0 +1,7 @@
+li[class="a"]{
+    color: rebeccapurple;
+}
+
+li[class~="a"]{
+    color: #229a1c;       /*this gives color to all class 'a' elements even if it has 2 class names*/
+}

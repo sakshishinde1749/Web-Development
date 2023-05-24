@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object part 2</title>
+</head>
+<body>
+    <script>
+        const product = {
+            name : 'shirt',
+
+            ['delivery-time'] : '4 days',
+
+            rating : {                       //we can also add object inside an object
+                starts : 4.5,
+                count : 87
+            },
+
+            fun : function funciton1(){                  //function inside an object
+                console.log('function inside object');   //and we called it as a method, the function inside the object is   ie product.fun is method
+            }
+        };
+
+        console.log(product['name']);
+        console.log(product['delivery-time']);         //we can also access object property by bracket method
+        console.log(product.rating.count);
+        console.log(product.fun());                          //this is how we called the funciton which are inside the object
+
+
+    </script>
+</body>
+</html>

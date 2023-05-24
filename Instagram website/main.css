@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.profile-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 7px;
+}
+
+.profile-pic{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-right: 11px;
+}
+
+.profilePic-name-time-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+.post-img{
+    width: 468.66px;
+    height: 468.66px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.436);
+}
+
+.post-vdo{
+    width: 468.66px;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.436);
+
+}
+
+.bluetick-icon{
+    height: 13px;
+    width: 13px;
+    object-fit: cover;
+}
+
+.more-button{
+    font-size: 11px;
+}
+
+.time{
+    color: #606060;
+    font-size: 13px;
+}
+
+.people-reaction-section, .like-comment-share-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.like-button, .comment-button, .share-button, .bookmark-button{
+    height: 23px;
+    width: 23px;
+    object-fit: cover;
+}
+
+.like-comment-share-button{
+    gap: 13px;
+}
+
+.people-reaction-section{
+    margin-top: 8px;
+}
+
+.impression-button{
+    border: none;
+    position: relative;
+}
+
+.like-section{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 9px;
+}
+
+.people-whoLiked-img{
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+    border-radius: 20px;
+    gap: -3px;
+}
+
+.second-person{
+    margin-left: -12px;
+}
+
+.people-whoLiked-name{
+    margin-left: 8px;
+    font-size: 13.5px;
+    font-weight: 500;
+}
+
+.profile-username, .commented-person-name{
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.caption-section, .numberof-comments, .comment, .add-comment{
+    font-size: 13.5px;
+}
+
+.like-caption-comment-section{
+    font-family: 'Roboto', sans-serif;
+}
+
+.commented-people, .add-comment-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.heart-button, .reaction-emoji{
+    width: 10px;
+}
+
+.like-section, .caption-section, .numberof-comments{
+    margin-bottom: 9px;
+}
+
+.add-comment-section{
+    margin-top: 9px;
+    margin-bottom: 20px;
+}
+
+.add-comment, .numberof-comments{
+    color: #c7b2b2;
+}
+
+.profile-pic-container{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+    background-image: 
+    linear-gradient(#405DE6, #5851DB,#833AB4,#C13584,#E1306C,#FD1D1D,#F56040,#F77737,#FCAF45,#FFDC80);
+    margin-right: 9px;
+}
+
+.profile-pic{
+    height: 85%;
+    width: 85%;
+    display: block;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 1px;
+    top: 1px;
+    border: 3px solid black;
+}
+
+.post-preview{
+    border-bottom: 0.1px solid rgba(128, 128, 128, 0.283);
+    margin-bottom: 20px;
+}
+
+.middle-part{
+    margin-left: -100px;
+}

@@ -1,0 +1,85 @@
+.container{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 40px;
+}
+.blueCircle{
+    height: 100px;
+    width: 100px;
+    border-radius: 80px; 
+    background-color: blue;
+    margin-bottom: 40px;
+}
+.feedback-question{
+    margin-bottom: 9px;
+    margin-top: 9px;
+}
+.serviceFeedback{
+    border: 1px solid black;
+    width: 200px;
+    padding: 10px;
+    padding-top: 0px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.card{
+    border: 1px solid black;
+    width: 400px;
+    padding: 10px;
+    background-color: rgb(249, 70, 70);
+    margin-bottom: 60px;
+}
+.title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    margin-top: 8px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 0px d4px rgb(31, 4, 4);
+    padding: 5px;
+    border-radius: 9px;
+}
+.profile{
+    display: inline-block;
+    border: none;
+    box-shadow: 0px 0px 6px gray;
+    margin-right: 10px;
+    margin-bottom: 60px;
+}
+.dogimg{
+    width: 200px;
+}
+.dog{
+    font-size: medium;
+    font-family: Arial;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+.connection{
+    margin-left: 10px;
+    margin-top: 5px;
+    font-family: Arial;
+    color: gray;
+    font-size: small;
+}
+.suggestionButton{
+    margin-left: 10px;
+    width: 94px;
+    padding: 4px;
+    background-color: #3698e2;
+    border: none;
+    color: white;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    transition: opacity 0.15s;
+    cursor: pointer;
+}
+.suggestionButton:hover{
+    opacity: 0.8;
+}
+.suggestionButton:active{
+    opacity: 0.5;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin flip</title>
+</head>
+<body>
+    <script>
+        let randomNumber = Math.random();
+        let result = '';
+        let guess = 'head';
+
+        if(randomNumber < 1/2){
+            result = 'heads';
+        }
+        else{
+            result = 'tails';
+        }
+
+        if(guess === result){
+            console.log('You Win');
+        }
+        else{
+            console.log('You lose');
+        }
+
+
+        // using ternary operator
+        // result = randomNumber < 1/2?  'heads':'tails';
+        // console.log(guess === result? 'you win': 'you lose';)
+
+    </script>
+</body>
+</html>

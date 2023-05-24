@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script>
+        //An object groups  multiple values together
+
+        const product = {name : 'socks', price : 223};      //name and price are properties and socks is value of property 
+
+        console.log(product);
+        console.log(product.name);
+        console.log(product.price);
+
+        product.name = 'cotton socks';        // changing the property
+        console.log(product.name);
+
+        product.newProperty = true;           //adding new property to the object
+        product.quantity = 4;
+        console.log(product);
+
+        delete product.newProperty;           //deleting the property from product
+        console.log(product);
+
+        console.log(typeof product);          //checking the type of product
+
+    </script>
+</body>
+</html>

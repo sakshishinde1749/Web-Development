@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
+.left-sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 240px;
+    border-right: 1px solid  rgba(128, 128, 128, 0.283);
+}
+
+.instagram-logo-picture{
+    width: 140px;
+    object-fit: cover;
+    margin-top: 22px;
+    margin-left: 10px;
+    margin-bottom:19px;
+}
+.icon-flexbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 23px;
+    margin-bottom: 15px;
+}
+
+.home-icon{
+    width: 42px;
+    object-fit: cover;
+    margin-right: 9px;
+}
+
+.search-icon, .explore-icon, .reel-icon, .message-icon, .like-icon, .create-icon, .hamburger-menu-icon{
+    width: 23px;
+    object-fit: cover;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+
+.my-profile-pic{
+    width: 30px;
+    object-fit: cover;
+    margin-right: 12px;
+    border-radius: 20px;
+    margin-left: 7px;
+}
+
+.home{
+    font-weight: bold;
+}
+
+.message-icon-div, .like-icon-div{
+    position: relative;
+}
+
+.numberOf-msg{
+    position: absolute;
+    color: white;
+    height: 15px;
+    width: 15px;
+    background-color: red;
+    border-radius: 20px;
+    right: 12px;
+    top: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+
+.notification-red-dot{
+    color: red;
+    position: absolute;
+    top: 0;
+    right: 14px;
+}

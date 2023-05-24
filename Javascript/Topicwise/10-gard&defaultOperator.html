@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gard and default operator</title>
+</head>
+<body>
+    <script>
+        //gard operator
+        false && console.log('hello');      // if the first value is falsy then gard operator will stop early and result will be first value
+
+        //default operator
+        const currency = 'EUR' || 'USD';
+        console.log(currency);              //this now first value is true and OR operator is there so computer wont gonna see second value 
+
+    </script>
+</body>
+</html>

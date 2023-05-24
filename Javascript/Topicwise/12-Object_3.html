@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More details of object-3</title>
+</head>
+<body>
+    <script>
+
+        //auto-boxing, javascript automatically wraps a string into an object
+        //auto-boxing does not work with null and undefined properties
+        console.log('hello'.length);
+        console.log('hello'.toUpperCase());
+
+
+
+        //object are references they are copy of references
+        const object1 = {
+            message : 'hello'
+        };
+
+
+        //so now object2 is copy reference of object1
+        const object2 = object1;
+
+       
+        //we can change the value of object1 even if it's a const varible. object1 stores the reference of its properties so we cant change its reference value but we can change its property value
+        object1.message = 'good job!';
+        console.log(object1);
+
+
+        //we cant equalise objects directly
+        const object3 = {
+            message : 'good job!'
+        };
+        //this is because object stores copy of reference so when we are comparing object we dont compare its actual values but we do compare its reference
+        //object3 reference is different from object1 reference but object1 and object2 have same reference
+        console.log(object3 === object1);
+        console.log(object2 === object1);
+
+
+        //destructing
+        //easier way to take properties out of an object 
+        const object4 = {
+            message : 'good job!',
+            price : 499
+        };
+
+        //const message = object4.message;
+        const {message, price} =  object4;
+        console.log(message);
+        console.log(price);
+
+
+    </script>
+</body>
+</html>

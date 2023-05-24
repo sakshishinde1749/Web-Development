@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JESON</title>
+</head>
+<body>
+    <script>
+        const personInfo = {
+            name : 'sakshi',
+            age : 18,
+            gender : 'female'
+        };
+        //JSON (javascript object notation) is similar to a javascript object syntax with less features
+        //it is built-in JSON object 
+        //it syntax can be understood by almost all programing languages
+        //JSON does not support function ie it doen't store function in it
+        //In this we write each property in double inverted comma
+
+        //converting object to JSON 
+        //this convert objects into string
+        console.log(JSON.stringify(personInfo));
+        console.log(typeof JSON.stringify(personInfo));
+
+        //converting JSON to javascript object
+        const jsonString =JSON.stringify(personInfo);
+        console.log(JSON.parse(jsonString));
+
+        
+    </script>
+</body>
+</html>

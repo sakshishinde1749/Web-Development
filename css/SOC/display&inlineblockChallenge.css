@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    margin-left: 10px;
+    background-color: black;
+}
+.firstName{
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 23px;
+    box-shadow: 0px 0px 4px white;
+    border: none;
+    color: white;
+    font-size: bold;
+}
+.lastName{
+    margin-left: 9px;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px white;
+    border: none;
+    color: white;
+    font-size: bold;
+}
+.email{
+    display: block;
+    margin-top: 22px;
+    padding: 8px;
+    width: 358px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px white;
+    border: none;
+    color: white;
+    font-size: bold;
+}
+.signUpButton{
+    margin-top: 22px;
+    padding: 8px;
+    width: 378px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0px 0px 4px white;
+    border: 2px solid white;
+    background-color: #1D9BF0;
+    cursor: pointer;
+    margin-bottom: 60px;
+}
+.heading{
+    color: white;
+    font-family: Arial;
+    margin-bottom: 28px;
+}
+.pickupLocation{
+    padding: 8px;
+    border-radius: 5px;
+}
+.destination{
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    margin-right: 60%;
+}
+.requestButton{
+    margin-left: 0;
+    margin-left: 16px; 
+    color: white;
+    cursor: pointer;
+}
+.scheduleButton{
+    color: white;
+    cursor: pointer;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        .subscribeButton{
+            background-color: rgb(228, 26, 26);
+            padding: 11px;
+            margin: 15px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+            border-radius: 5px;
+            border:none;
+            cursor: pointer;
+            transition: opacity 0.15s;   /*0.15 is good transition duration*/
+        }
+
+        .subscribeButton:hover{
+            opacity: 0.8;              /*this fade out when we hover on button*/
+        }
+
+        .subscribeButton:active{
+            opacity: 0.5;              /*this fade out the color when we click*/
+        }
+
+        .joinButton{
+            background-color: white;
+            color: blue;
+            margin-left: 32px;
+            padding: 10px;
+            margin: 15px;
+            border: 1.5px solid blue;
+            border-radius: 4px;
+            width: 70px;
+            font-weight:400;
+            cursor: pointer;
+            transition: background-color 0.15s,
+                        color 0.15s;
+        }
+
+        .joinButton:hover{
+            background-color: blue;
+            color: white;
+        }
+
+        .joinButton:active{
+            opacity: 0.7;
+        }
+
+        .tweetButton{
+            height: 42px;
+            width: 80px;
+            color: white;
+            font-weight: 550;
+            background-color:rgba(0, 72, 255, 0.689);
+            border:none;
+            border-radius: 30px;
+            font-size: 15px;
+            cursor: pointer;
+            transition: 0.15s;
+        }
+        .tweetButton:hover{
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+        }
+
+    </style>
+    <title>button</title>
+</head>
+
+<body>
+    <button class="subscribeButton">SUBSCRIBE</button>
+    <button class="joinButton">JOIN</button>
+    <button class="tweetButton">Tweet</button>
+</body>
+</html>

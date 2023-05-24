@@ -1,0 +1,55 @@
+.facebook-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.386);
+}
+
+.left-header, .right-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-header{
+    margin-left: 30px;
+}
+
+.right-header{
+    margin-right: 30px;
+}
+
+.puppy-picture{
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+    border-radius: 24px;
+    margin-right: 13px;
+}
+
+.name{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+
+}
+
+.add-friend-button, .message-button {
+    background-color: rgb(55, 160, 195);
+    border: none;
+    color: white;
+    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 14px;
+}
+
+.message-button{
+    margin-left: 9px;
+}
+

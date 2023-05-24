@@ -1,0 +1,102 @@
+*{
+    font-family: Arial;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.search-bar{
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid gray;
+    margin-bottom: 60px;
+}
+.search-bar:active{
+    border: none
+}
+
+.googleSearch-bar{
+    padding: 10px;
+    width: 350px;
+    border-radius: 40px;
+    border: none;
+    box-shadow: 0px 0px 2px 1px gray;
+    margin-right: 60px;
+    margin-bottom: 60px;
+}
+
+.email{
+    color: gray;
+    font-size: small;
+    margin-bottom: 8px;
+}
+
+.emailtextBOX{
+    border: 1.5px solid black;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    width: 315px;
+}
+.para{
+    font-size: small;
+    color: gray;
+    margin-bottom:15px ;
+
+}
+.agreeButton{
+    background-color:#1DA1F2;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 315px;
+    text-align: center;
+    border-radius: 25px;
+    transition: opacity 0.15s;
+    margin-right: 100%;
+    margin-bottom: 60px;
+}
+.agreeButton:hover{
+    opacity: 0.8;
+}
+.agreeButton:active{
+    opacity: 0.5;
+}
+
+.picture{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    object-position: center;
+    vertical-align: middle; 
+    border-radius: 30px;
+}
+
+.textbox{
+    vertical-align: middle; 
+    font-size: 14px;
+    color: gray;
+    margin-left: 5px;
+    border: none;
+    margin-right: 30px;
+}
+
+.tweetbutton{
+    background-color:  #1DA1F2;
+    color: white;
+    border: none;
+    padding: 5px;
+    padding-left: 11px;
+    padding-right: 14px;
+    text-align: center;
+    border-radius: 15px;
+    vertical-align: middle;
+    font-weight: bold;
+    transition: opacity 0.15s;
+}
+
+.tweetbutton:hover{
+    opacity: 0.8;
+}
+
+.tweetbutton:active{
+    opacity: 0.5;
+}

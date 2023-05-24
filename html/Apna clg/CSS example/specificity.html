@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/specificity.css">
+    <style>
+        .fav{
+            color: red;
+        }
+        ul#summerdrinks li{                /*it has high specificity than first one and because of this this one has more importance
+                                            and if both has same specificity then last property will get select first and style attribute has more importance than other */
+            color: black;
+        }
+    </style>
+    <title>specificity</title>
+</head>
+<body>
+    <ul id="summerdrinks">
+        <li>mountain dew</li>
+        <li>appy fizz</li>
+        <li>coke</li>
+        <li class="fav">pepsi</li>
+    </ul>
+</body>
+</html>

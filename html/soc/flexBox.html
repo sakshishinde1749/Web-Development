@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+</head>
+<body>
+    <div style="
+        display:flex;
+        flex-direction: row;">
+        <div style="background-color: lightblue;">
+            div1 text
+        </div>
+        <div style="background-color: lightcoral;">
+            div2
+            <p>
+                text. It maintains vertical allignment
+            </p>
+        </div>
+    </div>
+
+
+    <div style="
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;">
+        <div style="background-color: lightblue; width: 100px;">
+            div1
+        </div>
+        <div style="background-color: lightcoral; flex:1">             <!-- this flex:1 property is similar to fr in grid-->
+            flex: 1
+        </div>
+    </div>
+
+    <div style="display: flex;
+    flex-direction: row;
+    margin-top: 20px;">
+        <div style="background-color: lightblue;">
+            div1
+        </div>
+        <div style="background-color: chartreuse;  flex:1">
+            flex:1
+        </div>
+        <div style="background-color: lightpink; flex:2;">
+
+        </div>
+
+    </div>
+
+
+    <div style="display: flex;
+    border: 1px solid black;
+    flex-direction: row;
+    margin-top: 30px;
+    height: 70px;
+    justify-content: center;">
+        <div style="background-color: lightblue;  width: 90px;">
+            div1
+        </div>
+        <div style="background-color: lightcoral; width: 90px;">
+            div2
+        </div>
+        <div style="background-color: lightblue; width: 90px;">
+            div3
+        </div>
+    </div>
+
+
+    <div style="display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    margin-top: 30px;
+    height: 70px;
+    justify-content: space-evenly;">       <!--or we can use space  between property as well it gives equal space between all box-->
+        <div style="background-color: lightblue;  width: 90px;">
+            div1
+        </div>
+        <div style="background-color: lightcoral; width: 90px;">
+            div2
+        </div>
+        <div style="background-color: lightblue; width: 90px;">
+            div3
+        </div>
+    </div>
+
+
+    <div style="display: flex;
+    border: 1px solid black;
+    flex-direction: row;
+    margin-top: 30px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;">                                             <!--this will align items to the center-->
+        <div style="background-color: lightblue;  width: 90px;">
+            div1
+        </div>
+        <div style="background-color: lightcoral; width: 90px;">
+            div2
+        </div>
+        <div style="background-color: lightblue; width: 90px;">
+            div3
+        </div>
+    </div>
+
+</body>
+</html>

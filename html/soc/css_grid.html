@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Practice</title>
+</head>
+<body>
+    <div style="display: grid;
+    grid-template-columns: 100px 100px;">
+        <div style="background-color: lightblue;">
+            div1
+            <p>text</p>
+        </div>
+        <div style="background-color: lightcoral;">
+            div2
+            <p>text</p>
+        </div>
+    </div>
+
+    <div style="
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 100px 100px 200px;">
+        <div style="background-color: lightblue;">
+            div1
+            <p>text</p>
+        </div>
+        <div style="background-color: lightcoral;">
+            div2
+        </div>
+        <div style="background-color: lightblue;">
+            div3
+        </div>
+        <div style="background-color: lightcoral; margin-top: 10px;">      <!-- if we add extra div according to cloumns then it will start aligning from next line-->
+            div4
+        </div>
+        <div style="background-color: lightblue;">
+            grid5
+        </div>
+        <div style="background-color: lightcoral;">
+            grid6
+        </div>
+
+    </div>
+
+    <div style="
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 100px 1fr;">
+        <div style="background-color: aqua;">
+            grid1
+        </div>
+        <div style="background-color: blueviolet;">
+            1fr
+        </div>
+    </div>
+
+    <div style="
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 100px 1fr 2fr;">
+        <div style="background-color: aqua;">
+            grid1
+        </div>
+        <div style="background-color: blueviolet;">
+            1fr
+        </div>
+        <div style="background-color: brown;">
+            2fr
+        </div>
+    </div>
+
+    <div style="
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px; row-gap: 10px;" >
+        <div style="background-color: lightblue; height: 100px;">
+            grid1
+        </div>
+        <div style="background-color: lightcoral;">
+            grid2
+        </div>
+        <div style="background-color: lightblue;">
+            grid3
+        </div>
+        <div style="background-color: lightcoral; height: 100px;">
+            grid4
+        </div>
+        <div style="background-color: lightblue;">
+            grid5
+        </div>
+        <div style="background-color: lightcoral;">
+            grid6
+        </div>
+
+    </div>
+
+</body>
+</html>

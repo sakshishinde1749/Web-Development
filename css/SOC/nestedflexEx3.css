@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap');
+
+*{
+    font-family: 'Instrument Sans', sans-serif;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.name-info{
+    display: flex;
+    flex-direction: row;
+}
+
+.vdo-info-page{
+    display: flex;
+    flex-direction: row;
+}
+
+.personal-info{
+    margin-left: 11px;
+}
+
+.personal-profile{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.name{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.username{
+    font-size: 17px;
+    color: rgb(46, 165, 205);
+    margin-left: 2px;
+}
+
+.new-vdo-update{
+    font-size: 14px;
+    width: 320px;
+    margin-top: 6px;
+}
+
+.blank{
+    background-color: rgba(128, 128, 128, 0.274);
+    width: 70px;
+}
+
+.link{
+    color: rgb(112, 112, 219);
+    font-size: 14px;
+}
+
+.vdo-info-page{
+    box-shadow: 0px 0px 4px #606060;
+    width: 232px;
+    border-radius: 12px;
+    margin-top: 20px;
+    height: 80px;
+    width: 280px;
+}
+
+.vdo-caption{
+    font-size: 14px;
+    
+}
+
+.vdo-info{
+    margin-left: 9px;
+    flex:1;
+    margin-top: 10px;
+}

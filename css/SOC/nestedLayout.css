@@ -1,0 +1,60 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.profile{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    height: 100px;
+    margin-bottom: 15px;
+    vertical-align: middle;
+}
+.img{
+    display: inline-block;
+    vertical-align: middle;
+}
+.puppy-info{
+    display: inline-block;
+    text-align: start;
+    margin-left: 10px;
+    vertical-align: middle;
+    width: 200px;
+}
+.button{
+    display: inline-block;
+    vertical-align: middle;
+}
+.puppy-img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50px;
+    margin-left: 9px;
+    margin-top: 11px;
+}
+.name{
+    margin-bottom: 2px;
+    font-weight: bold;
+
+}
+.type{
+    margin-top: 4px;
+    font-size: 11px;
+    color: gray;
+    margin-bottom: 0;
+}
+.popularity{
+    margin-top: 4px;
+    font-size: 11px;
+    color: gray;
+}
+.follow-button{
+    background-color: rgb(27, 166, 212);
+    color: white;
+    border: none;
+    padding: 6px;
+    border-radius: 5px;
+    padding-left: 13px;
+    padding-right: 13px;
+    text-align: center;
+    font-weight: bold;
+}

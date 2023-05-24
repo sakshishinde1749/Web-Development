@@ -1,0 +1,13 @@
+li[class]{
+    color:violet;
+} 
+li[class="a"]{      
+    color: aqua;
+} 
+li[class~="a"]{        /*it select each a class even if other class is included in it*/
+    color: pink;
+}
+*{
+    color: yellow;
+    background-color: yellowgreen;
+}

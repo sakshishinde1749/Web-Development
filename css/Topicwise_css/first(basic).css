@@ -1,0 +1,24 @@
+/* we can link css to html in 3 ways first is inline where we add property as attribute to element, in internal css we use whole tag in head tag and in external css we link css file in head tag */
+
+/* In selector we add different element and In combined selector we take multiple selectors at the same time */
+h1{
+    color: black;
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+h3{
+    font-family: 'Courier New', Courier, monospace;    /*we can add fonts from google as well*/
+}
+h4,p{
+    color: bisque;
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.sentence{
+    color: blueviolet;
+}
+
+
+

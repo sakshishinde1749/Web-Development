@@ -1,0 +1,36 @@
+
+a:hover{
+    color: red;
+    text-decoration: none;   /* it remove underline of link*/
+}
+/* li{
+    list-style-type: none;
+} */
+/* div.fruit{
+    color: brown;
+} */
+div.name{
+    color: blueviolet;
+}
+/* li u{
+    color: aquamarine;
+} */
+p+h4{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body p+h4+div.fruit{
+    color: aliceblue;
+    background-color: black;
+    padding: 20px;
+    /* margin: 20px; */
+}
+.fruitColor{
+    color: brown;
+}
+
+#mango{
+    color: aliceblue;
+}
+
+
+  
