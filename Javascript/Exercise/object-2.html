@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object-2_exercise</title>
+</head>
+<body>
+    <script>
+        //8e
+        const product1 = {
+            name : 'hoodie',
+            price : 999
+        };
+        const product2 = {
+            name : 'hoodie',
+            price : 999
+        };
+
+        function isSameProduct(product1, product2){
+
+            if(product1.name === product2.name && product1.price === product2.price){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+        console.log(isSameProduct(product1, product2));
+
+
+        //8f
+        const name = 'SAKshi';
+        console.log(name.toLowerCase());
+
+        //8g
+        const message = 'you go girl';
+        console.log(message.repeat(2));
+
+        
+    </script>
+</body>
+</html>
