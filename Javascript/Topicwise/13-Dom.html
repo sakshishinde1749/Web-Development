@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document object model</title>
+</head>
+<body>
+    <button>hello</button>
+    
+
+    <script>
+        
+        //here document is a object which is reponsible for doing a changes in a webpage , it is linked with a webpage
+        document.body.innerHTML = 'yha bhi hoga wha bhi hoga kya mera hi jalwa';
+        document.title = 'good job!';
+
+
+        //It have a control on title of webpage
+        console.log(document.title);
+        document.title = 'you go girl';
+
+
+        //It have a control on body of webpage
+        console.log(document.body);
+        console.log(typeof document.body);
+
+
+        //It have a control on whole inner html code
+        console.log(document.body.innerHTML);
+        document.body.innerHTML = '<button>good job</button>'     //using this property we can get full control of html code
+
+
+
+        //It have control on specific element of html
+        console.log(document.querySelector('button').innerHTML);
+        document.querySelector('button')
+            .innerHTML = 'changed';          //this is how we can change any specific element of html and if we want to control another button then we can simply refer it using class
+
+        
+
+        
+        
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Project</title>
+</head>
+<body>
+
+    <p>YouTube Subscribe Button</p>
+
+    <button onclick="
+       subscribeButton();
+    " class="js-subscribe-button">Subscribe</button>      <!--if we are mentioning some space around subscribe button in that case this code wont gonna work for that we  need to use .innerText property -->
+
+
+
+    <script>
+        function subscribeButton(){
+            const buttonElement = document.querySelector('.js-subscribe-button');
+
+            if(buttonElement.innerHTML === 'Subscribe'){
+                buttonElement.innerHTML = 'Subscribed';
+            }
+            else{
+                buttonElement.innerHTML = 'Subscribe';
+            }
+        }
+    </script>
+</body>
+</html>
