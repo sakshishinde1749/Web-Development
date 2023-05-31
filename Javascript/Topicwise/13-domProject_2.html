@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amazon shipping calculator(dom)</title>
+</head>
+<body>
+    <p>Amazon Shipping Calculator</p>
+    <p>Orders under $40 = +$10 shipping</p>
+    <p>Orders over $40 = FREE shipping</p>
+
+    <input placeholder="Cost of Order" class="js-inputAmount" 
+    onkeydown= " handleCostKeydown(event);">
+
+    <button onclick="
+        calculateTotalAmount();
+    ">Calculate</button>
+
+    <p class="total-amount"></p>
+
+
+
+    <script>
+
+        function handleCostKeydown(event){
+            if(event.key === 'Enter'){
+                calculateTotalAmount();
+               }
+        }
+
+        function calculateTotalAmount(){
+            let totalAmount = Number(document.querySelector('.js-inputAmount').value);
+
+            if(totalAmount < 40){
+                totalAmount += 10;
+                document.querySelector('.total-amount').innerHTML = totalAmount;
+            }
+            else{
+                document.querySelector('.total-amount').innerHTML = totalAmount; 
+            }
+        }
+
+
+
+        //another feathers of javascript
+
+        //this will convert  number into string
+        String(21)  
+
+        //type coercion
+        //if string only contains a number and we are -,*,/ some number from it then string will get converted into number but its not true with addition
+        console.log('23' - 3);      
+    </script>
+</body>
+</html>
