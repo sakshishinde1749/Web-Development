@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom-exercise2</title>
+</head>
+<body>
+    <input type="text" placeholder="Name" class="inputBox"
+    onkeydown=" handleCostKeydown(event)">
+
+    <button onclick="
+        outputOfSubmit();
+    ">Submit</button>
+
+    <p class="name-display"></p>
+
+    <script>
+        function outputOfSubmit(){
+
+            const inputText = document.querySelector('.inputBox').value;
+
+            document.querySelector('.name-display')
+                .innerHTML = `Your name is : ${inputText}`;
+
+        }
+
+        function handleCostKeydown(event){
+            if(event.key === 'Enter'){
+                outputOfSubmit();
+            }
+        }
+    </script>
+</body>
+</html>
