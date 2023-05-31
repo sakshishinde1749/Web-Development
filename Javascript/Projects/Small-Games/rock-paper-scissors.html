@@ -23,17 +23,24 @@
         playGame('Scissors');
     ">Scissors</button>
 
+    <p class="js-result"></p>
+
+    <p class="js-computerMove"></p>
+
+    <p class="js-score"></p>
+
     <button onclick="
         score.Win = 0;
         score.Looses = 0;
         score.Tie = 0;
         localStorage.removeItem('score');
+        updateScoreElement();
     ">Reset</button>
 
 
     <script>
         let score = JSON.parse(localStorage.getItem('score')) || {Win : 0, Looses : 0, Tie : 0};
-        
+
         /*if(!score){
             score = {
                 Win : 0,
@@ -41,7 +48,9 @@
                 Tie : 0
             };
         }*/
-        
+
+        updateScoreElement();
+
         
         function pickComputerMove(){
 
@@ -63,9 +72,8 @@
         }
 
         function playGame(playerMove){
-            let result = '';
-            let computerMove = pickComputerMove();
             
+            let computerMove = pickComputerMove();
 
             if(playerMove === 'Rock'){
 
@@ -105,7 +113,14 @@
                 }
 
             }
+            document.querySelector('.js-result')
+                .innerHTML = `${result}`;
 
+            document.querySelector('.js-computerMove')
+                .innerHTML = `You ${playerMove} - ${computerMove} computer`;
+
+
+            
             if(result === 'You Lose'){
                 score.Looses ++;
             }
@@ -115,16 +130,20 @@
             else{
                 score.Tie ++;
             }
+
+            updateScoreElement();
+
             localStorage.setItem('score', JSON.stringify(score));     /*here we are storing the score values in local storage, local storage only suppports strings that's why we have converted object to the string.*/
 
-
-
-            alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}
-                Win : ${score.Win}, Looses : ${score.Looses}, Tie : ${score.Tie}`);
-
-            
             
         }
+
+        function updateScoreElement(){
+
+            document.querySelector('.js-score')
+                .innerHTML = `Win : ${score.Win}, Looses : ${score.Looses}, Tie : ${score.Tie}`;
+        }
+
         
     </script>
 </body>
