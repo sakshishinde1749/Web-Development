@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom-exercise3</title>
+</head>
+<body>
+    <input placeholder="Type Something" class="js-inputBox"
+    onkeyup="handleTextKeyup();">
+
+    <p class="inputText-display"></p>
+
+    <script>
+        function handleTextKeyup(){
+
+            let inputValue = document.querySelector('.js-inputBox').value;
+
+            document.querySelector('.inputText-display')
+                .innerHTML = inputValue;
+        }
+    </script>
+</body>
+</html>

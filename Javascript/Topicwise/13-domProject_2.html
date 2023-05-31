@@ -34,7 +34,7 @@
             let totalAmount = Number(document.querySelector('.js-inputAmount').value);
 
             if(totalAmount < 40){
-                totalAmount += 10;
+                totalAmount = (totalAmount*100 + 1000)/100;               //if cost is decimal number
                 document.querySelector('.total-amount').innerHTML = totalAmount;
             }
             else{
