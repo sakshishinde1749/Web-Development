@@ -1,45 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissors</title>
-</head>
-<body>
-    <p>
-        Rock Paper Scissors
-    </p>
-
-    <button onclick="
-        playGame('Rock');
-    ">Rock</button>
-
-    <button onclick="
-        playGame('Paper');
-    ">Paper</button>
-
-    <button onclick="
-        playGame('Scissors');
-    ">Scissors</button>
-
-    <p class="js-result"></p>
-
-    <p class="js-computerMove"></p>
-
-    <p class="js-score"></p>
-
-    <button onclick="
-        score.Win = 0;
-        score.Looses = 0;
-        score.Tie = 0;
-        localStorage.removeItem('score');
-        updateScoreElement();
-    ">Reset</button>
-
-
-    <script>
-        let score = JSON.parse(localStorage.getItem('score')) || {Win : 0, Looses : 0, Tie : 0};
+let score = JSON.parse(localStorage.getItem('score')) || {Win : 0, Looses : 0, Tie : 0};
 
         /*if(!score){
             score = {
@@ -116,10 +75,10 @@
             document.querySelector('.js-result')
                 .innerHTML = `${result}`;
 
-            document.querySelector('.js-computerMove')
-                .innerHTML = `You ${playerMove} - ${computerMove} computer`;
+            document.querySelector('.js-move')
+                .innerHTML = `Your Move <img class="rock-img" src="../../../../html/Static/rock-paper-scissors_game/${playerMove}-emoji.png" alt="">  <img class="rock-img" src="../../../../html/Static/rock-paper-scissors_game/${computerMove}-emoji.png" alt="">  Computer's move`;
 
-
+            
             
             if(result === 'You Lose'){
                 score.Looses ++;
@@ -145,6 +104,3 @@
         }
 
         
-    </script>
-</body>
-</html>

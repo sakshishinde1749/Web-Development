@@ -1,23 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coin flip</title>
-</head>
-<body>
-
-    <button onclick="
-        playGame('Heads')
-    ">Heads</button>
-
-    <button onclick="
-        playGame('Tails')
-    ">Tails</button>
-
-    <script>
-        const score = JSON.parse(localStorage.getItem('score')) || {Win : 0, Losses : 0};
+const score = JSON.parse(localStorage.getItem('score')) || {Win : 0, Losses : 0};
         
         function playGame(guess){
             let randomNumber = Math.random();
@@ -45,12 +26,3 @@
             console.log(score);
 
         }
-
-
-        // using ternary operator
-        // result = randomNumber < 1/2?  'heads':'tails';
-        // console.log(guess === result? 'you win': 'you lose';)
-
-    </script>
-</body>
-</html>
