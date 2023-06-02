@@ -1,0 +1,13 @@
+.toggle-button{
+    background-color: rgb(230, 230, 230);
+    border: none;
+    padding: 6px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.is-toggled{
+    background-color: black;
+    color: white;
+}
