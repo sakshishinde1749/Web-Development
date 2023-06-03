@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and loops</title>
+</head>
+<body>
+    <script>
+        //array
+        const myArray = [10,20,30];
+        console.log(myArray);
+
+        //values in array
+        console.log(myArray[0]);
+
+        //0th index element is prototype element
+        myArray[0] = 99;
+
+        console.log(myArray);
+
+        //array is made up of any value we can even add array into an array
+        const newArray = [1, 'hello', true, {name : 'socks'}, [1, 2]];
+
+
+        //array length
+        console.log(myArray.length);
+
+        //adding last element to array
+        myArray.push('sakshi');
+        console.log(myArray);
+
+        //deleting any element from array
+        myArray.splice(0, 1);
+        console.log(myArray);
+
+
+    </script>
+</body>
+</html>
