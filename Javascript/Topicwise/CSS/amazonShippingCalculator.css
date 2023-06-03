@@ -25,3 +25,11 @@ p{
 input ::placeholder{
     font-size:8px ;
 }
+
+.error-msg{
+    color: red;
+}
+
+.input-calculateButton-div{
+    margin-top: 25px;
+}
