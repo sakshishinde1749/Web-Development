@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrays and loop ex-2</title>
+</head>
+<body>
+    <script>
+        const nums = [1, 2, 3, 4];
+
+        //11e
+        for(let i=5; i>=0; i--){
+            console.log(i);
+        }
+
+        //11f
+        let i=0;
+        while(i<=10){
+            if(i%2 === 0){
+                console.log(i);
+            }
+            i++;
+        }
+
+        let j=5;
+        while(j>=0){
+            console.log(j);
+            j--;
+        }
+
+        //11g
+        console.log(newArray(nums));
+        function newArray(array){
+            newNumsArray = [];
+
+            for(let i=0; i<array.length; i++){
+                newNumsArray[i] = array[i] + 1;
+            }
+            return newNumsArray;
+        }
+
+        //11h
+        console.log(addOne(nums));
+        function addOne(array){
+        
+            for(let i=0; i<=array.length; i++){
+                array[i] = array[i] + 1;
+            }
+            return array;
+        }
+
+    </script>
+</body>
+</html>
