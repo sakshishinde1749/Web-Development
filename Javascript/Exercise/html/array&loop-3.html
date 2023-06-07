@@ -7,19 +7,49 @@
     <title>array and loop ex-3</title>
 </head>
 <body>
+
     <script>
-        const nums = [1, 2, 3, 4];
-
-
-        //11i 
-        console.log(addNum(nums, 2));
-
+        const nums = [1, 2, 3, 0, -1];
+        const number1 = [2, 3, 4];
+        const number2 = [3, 4, 5];
+        
+        //11i
+        console.log(addNum(nums, 3));
         function addNum(array, num){
-            for(let i=0; i<=array.length; i++){
+
+            for(let i=0; i<array.length; i++){
                 array[i] = array[i] + num;
             }
             return array;
+
         }
+
+        //11j
+        console.log(addArrays(number1, number2));
+        function addArrays(array1, array2){
+            const result = [];
+
+            for(let i=0; i<array1.length; i++){
+                result[i] = array1[i] + array2[i];
+            }
+            return result;
+        }
+
+        //11k
+        console.log(countPositive(nums));
+        function countPositive(array){
+            let count = 0;
+
+            for(let i=0; i<array.length; i++){
+                if(array[i] > 0){
+                    count++;
+                }
+            }
+            
+            return count;
+        }
+
+    
     </script>
 </body>
 </html>

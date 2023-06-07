@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array and loop ex-3</title>
+</head>
+<body>
+    <script>
+        const nums = [1,2,3,0];
+
+
+        //11l
+        minMax(nums);
+        function minMax(array){
+            const result = {
+                min : null,
+                max : null
+            };
+
+            for(let i=0; i<array.length; i++){
+                let value = array[i];
+
+                if(result.min === null || value < result.min){
+                    result.min = value;
+                }
+                if(result.max === null || value > result.max){
+                    result.max = value;
+                }
+            }
+            
+           console.log(result);
+            
+        }
+
+
+        //11n
+        function countWords(array){
+            const result = {};
+
+
+            for(let i=0; i<array.length; i++){
+
+                if(!result[array[i]]){
+                    result[array[i]] = 1;
+                }
+                else{
+                    result[array[i]]++;
+                }
+            }
+            console.log(result);
+        }
+        countWords(['apple', 'mango', 'apple', 'mango', 'kivi']);
+    </script>
+</body>
+</html>
