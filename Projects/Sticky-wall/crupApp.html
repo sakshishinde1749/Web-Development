@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="crudApp.css">
+    <title>simple todo list-2</title>
+</head>
+<body>
+    
+    <div class="title">
+        <button class="title-button">
+            Tasks To Do
+        </button>
+    </div>
+
+
+    <div class="todo-input-grid">
+        
+        <input type="text" class="js-inputBox inputBox" placeholder="Todo Name" onkeydown="handleTodokeydown(event)">
+    
+        <input type="date" class="js-dueDate dueDate">
+    
+        <button onclick="
+            addTodo();
+        " class="addButton" >Add</button>
+        
+    </div>
+
+    <div class="js-tasks todo-grid"></div>
+
+
+    <script src="crudApp.js"></script>
+
+</body>
+</html>
