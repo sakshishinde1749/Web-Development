@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrays and loop challenge ex-7</title>
+</head>
+<body>
+    <script>
+        //11v famous fizzbuzz problem
+
+        for(let i=0; i<=20; i++){
+
+            if(i%3 === 0){
+                console.log(`${i} : Fizz`);
+            }
+            else if(i%5 === 0){
+                console.log(`${i} : Buzz`);
+            }
+            else if(i%3 === 0 && i%5 ===0){
+                console.log(`${i} : FizzBuzz`);
+            }
+            else{
+                console.log(i);
+            }
+        }
+
+
+        //11w
+        //copying function 11q
+        function findIndex(array, word){
+
+            for(let i=0; i<array.length; i++){
+
+                if(array[i] === word){
+                    console.log(i);
+                    return;
+                }
+                
+            }
+            return (-1);
+        }
+
+        function unique(array){
+            const resultArray = [];
+
+            for(let i=0; i<array.length; i++){
+                const word = array[i];
+
+                if(findIndex(resultArray, word) === -1){
+                    resultArray.push(word);
+                }
+            }
+            console.log(resultArray);
+        }
+        unique(['apple','grape','mango', 'apple', 'mango','grape']);
+
+
+        
+    </script>
+</body>
+</html>

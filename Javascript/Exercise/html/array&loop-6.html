@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrays and loops ex-6</title>
+</head>
+<body>
+    <script>
+        //11t
+        //removing last two eggs of array
+
+        function removeEgg(foods){
+            const reverseFoods = foods.reverse();
+
+            const resultFood = []
+            let count = 0;
+
+            for(let i=0; i<reverseFoods.length; i++){
+
+                if(reverseFoods[i] === 'egg' && count<2){
+                    count++;
+                    continue;
+                }
+                else{
+                    resultFood.push(reverseFoods[i]);
+                }
+            }
+            console.log(resultFood.reverse());
+        }
+        removeEgg(['apple', 'egg', 'kivi', 'egg', 'egg']);
+
+
+        //11u
+        //.reverse() function doesn't create a copy of array
+        //It modifies the original array
+
+        function removeEgg(foods){
+
+            const foodCopy = foods.slice();
+            const reverseFoods = foodCopy.reverse();
+
+            const resultFood = [];
+            let count = 0;
+
+            for(let i=0; i<reverseFoods.length; i++){
+
+                if(reverseFoods[i] === 'egg' && count<2){
+                    count++;
+                    continue;
+                }
+                else{
+                    resultFood.push(reverseFoods[i]);
+                }
+
+            }
+            console.log(resultFood.reverse());
+        }
+        const foods = ['egg', 'apple', 'egg', 'egg', 'ham'];
+        console.log(removeEgg(foods));
+        console.log(foods);
+    </script>
+</body>
+</html>
