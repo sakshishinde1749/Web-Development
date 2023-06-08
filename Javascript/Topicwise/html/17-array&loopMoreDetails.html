@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More details of arrays and loop</title>
+</head>
+<body>
+    <script>
+        //so [1,2,3] gets stored somewhere in computers memory 
+        //array1 contains copy of that reference
+        //when we equal array1 and array2 both points to the 
+        //same value that means both have same copy of reference
+        const array1 = [1, 2, 3];
+        const array2 = array1;
+        array2.push(4);
+        console.log(array1);
+        console.log(array2);
+
+        
+        //so if we are adding any value into array2 then it 
+        //automatically getting added into array1 as well so to
+        //solve this issue we copy that array  value and form new one
+        //now both array1 and array2 are pointing to two different 
+        //reference which has same value
+        const array3 = array1.slice();
+        array3.push(5);
+        console.log(array1);
+        console.log(array3);
+
+
+        //break and continue
+        
+    </script>
+</body>
+</html>
