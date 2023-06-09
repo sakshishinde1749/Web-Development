@@ -30,6 +30,23 @@ let score = JSON.parse(localStorage.getItem('score')) || {Win : 0, Looses : 0, T
         
         }
 
+        let isAutoplaying = false;
+        let intervalId;
+
+        function autoPlay(){
+            if(!isAutoplaying){
+                intervalId =  setInterval(function(){
+                    playGame(pickComputerMove());
+                }, 1000);
+
+                isAutoplaying = true;
+            }
+            else{
+                clearInterval(intervalId);
+                isAutoplaying = false;
+            }  
+        }
+
         function playGame(playerMove){
             
             let computerMove = pickComputerMove();
@@ -102,5 +119,7 @@ let score = JSON.parse(localStorage.getItem('score')) || {Win : 0, Looses : 0, T
             document.querySelector('.js-score')
                 .innerHTML = `Win : ${score.Win}, Looses : ${score.Looses}, Tie : ${score.Tie}`;
         }
+
+
 
         

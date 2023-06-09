@@ -39,7 +39,7 @@ body{
     font-size: 15px;
 }
 
-.reset-button{
+.reset-button, .autoPlay-button{
     font-weight: bold;
     background-color: white;
     color: black;

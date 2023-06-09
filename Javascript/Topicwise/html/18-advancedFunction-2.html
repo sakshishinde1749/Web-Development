@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced function-2</title>
+</head>
+<body>
+    <script>
+        //As funtion is a value we can pass function
+        //into funtion
+        function function1(parameter){
+            parameter();
+        }
+        function1(function(){
+            console.log('you go girl');
+        })
+
+
+        //setTimeout inbuild function
+        //first parameter is funtion which we want to run
+        //second paramter is time that means after some given 
+        //time it will run and time is in milliseconds
+        //1000 milisec = 1sec
+        setTimeout(function(){
+            console.log('chill kr babe')
+        }, 3000);
+
+
+        //this is asyncronomus code it doesn't block our code
+        //for 3 sec it just sets the time
+        //all other codes are syncronomus they run line by line
+
+
+        //another asyncronomus funtion
+        //same like setTimeout but it keeps runing the code
+        //after every certain interval of time
+        setInterval(function(){
+            console.log('life sucks but you not');
+        }, 2000);
+    </script>
+</body>
+</html>

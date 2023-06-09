@@ -4,11 +4,7 @@
 }
 
 .todo-input-grid{
-    margin-bottom: 10px;
-}
-
-.js-inputBox{
-    padding: 3px;
+    margin-bottom: 25px;
 }
 
 .title, .todo-input-grid, .todo-grid{
@@ -19,9 +15,9 @@
 
 .todo-grid, .todo-input-grid{
     display: grid;
-    grid-template-columns: 250px 200px 150px 150px ;
+    grid-template-columns: 300px 150px 100px ;
     column-gap: 10px;
-    row-gap: 10px;
+    row-gap: 15px;
 }
 
 .title-button{
@@ -38,6 +34,8 @@
 }
 
 .addButton, .deleteButton{
+    display: flex;
+    justify-content: center;
     padding: 9px;
     padding-right: 40px;
     padding-left: 40px;
@@ -47,21 +45,31 @@
     font-weight: bold;
     box-shadow: 0px 0px 3px white;
 }
-.addButton{
+
+.inputBox, .dueDate{
+    padding: 9px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.addButton, .inputBox, .dueDate{
     background-color: rgb(122, 224, 122);
+    color: black;
+    box-shadow: 0px 0px 3px black;
+    
 }
 .deleteButton{
     background-color: rgb(203, 80, 80);
 }
 
-.dueDate, .inputBox, .todo-name, .todo-dueDate{
+.todo-name, .todo-dueDate{
     background-color: white;
     border: none;
     padding: 8px;
     border-radius: 5px;
     box-shadow: 0px 0px 3px gray;
 }
-
 
 
 

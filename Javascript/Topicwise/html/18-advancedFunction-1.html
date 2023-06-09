@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced function-1</title>
+</head>
+<body>
+    <script>
+
+        //functions are values so we can save them 
+        //in a variable
+        const function1 = function greeting(){
+            console.log('hello');
+        }
+        //or we can also write
+        //this is anonymous function
+        const function2 = function(){
+            console.log('hello');
+        }
+
+        console.log(function1);
+        console.log(typeof function1);
+        //we can also run the function using variable
+        function1();
+
+        const object1 = {
+            num : 2,
+            fun : function(){
+                console.log('hey');
+            }
+        };
+        object1.fun();
+
+    </script>
+</body>
+</html>
