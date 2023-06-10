@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced function ex-1</title>
+</head>
+<body>
+    <button class="js-startButton" onclick="
+        updateButton();
+    ">Start</button>
+
+    <button class="js-addToCart-button" onclick="
+        displayMsg();
+    ">Add to Cart</button>
+
+    <p class="js-addedMsg"></p>
+
+    <script>
+        //12a
+        const add = function(){
+            console.log(2+3);
+        }
+        add();
+        add();
+
+        //12b
+        function runTwice(fun){
+            fun();
+            fun();
+        }
+        runTwice(add);
+
+        //12c 12d
+        function updateButton(){
+            const button = document.querySelector('.js-startButton');
+
+            if(button.innerHTML === 'Finished!'){
+                setTimeout(function(){
+                    button.innerHTML = 'Start';
+                }, 1000);
+            }
+            else{
+                button.innerHTML = 'Loading..';
+                setTimeout(function(){
+                    button.innerHTML = 'Finished!';
+                }, 1000);
+            }
+        }
+
+
+        //12e
+        function displayMsg(){
+            document.querySelector('.js-addedMsg')
+                .innerHTML = 'Added';
+            
+            setTimeout(function(){
+                document.querySelector('.js-addedMsg')
+                    .innerHTML = '';
+            }, 2000);
+        }
+
+        
+        
+    </script>
+</body>
+</html>

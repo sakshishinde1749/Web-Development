@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced function-3</title>
+</head>
+<body>
+    <script>
+        //anohter method to loop over through an array
+        [
+            'make dinner',
+            'study',
+            'dont do chutiyap',
+            'just kidding you can'
+        ].forEach(function(value, index){
+
+            if(value === 'study'){
+                return;             //we can use this insted of continue statment
+            }
+            console.log(index);
+            console.log(value);
+        })
+    </script>
+</body>
+</html>
