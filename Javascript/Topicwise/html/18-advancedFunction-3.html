@@ -26,7 +26,22 @@
         })
 
 
-       
+        //another method for onclick attribute
+        //first parameter is event or what type of interaction we want to looking for
+        // and second taked funtion which should happen like when we click button
+        const buttonElement = document.querySelector('.js-button');
+
+        const fun = function(){
+            console.log('hello');
+        }
+        buttonElement.addEventListener('click', fun());
+        buttonElement.removeEventListener('click', fun());
+
+        //the advantage of this is it can add multiple events on same button at same time
+        //and also able to remove some events 
+        buttonElement.addEventListener('click', function(){
+            console.log('hey');
+        });
     </script>
 </body>
 </html>

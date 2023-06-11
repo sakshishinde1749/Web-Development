@@ -120,6 +120,18 @@ let score = JSON.parse(localStorage.getItem('score')) || {Win : 0, Looses : 0, T
                 .innerHTML = `Win : ${score.Win}, Looses : ${score.Looses}, Tie : ${score.Tie}`;
         }
 
+        document.body.addEventListener('keydown', function(event){
+            if(event.key === 'r'){
+                playGame('Rock');
+            }
+            else if(event.key === 'p'){
+                playGame('Paper');
+            }
+            else if(event.key === 's'){
+                playGame('Scissors');
+            }
+        })
+
 
 
         
